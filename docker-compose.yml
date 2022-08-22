@@ -7,7 +7,7 @@ services:
     ports:
       - "5432:5432"
     env_file:
-      - .env
+      - ./back-end/.env
     volumes:
       - pg:/var/lib/postgresql/data
 
@@ -19,7 +19,7 @@ services:
     depends_on:
       - db_sorteador
     env_file:
-      - .env
+      - ./back-end/.env
 
   sorteador_react:
     build: ./front-end
