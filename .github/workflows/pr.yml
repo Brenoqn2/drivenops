@@ -18,5 +18,3 @@ jobs:
           directory: back-end/
       - name: Run tests
         run: cd back-end && docker-compose -f docker-compose-test.yml run sorteador_test npm run test
-      - name: Build
-        run: npm i && npm run build
